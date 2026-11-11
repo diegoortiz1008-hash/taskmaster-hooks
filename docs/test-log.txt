@@ -1,0 +1,16 @@
+ ✓ src/hooks/useTasks.test.tsx > useTasks · fetching > carga solo las tareas del proyecto, más recientes primero
+ ✓ src/hooks/useTasks.test.tsx > useTasks · fetching > expone el error (p. ej. RLS) y permite reintentar
+ ✓ src/hooks/useTasks.test.tsx > useTasks · mutaciones optimistas > createTask muestra la tarea al instante y luego la reemplaza por la real sin duplicar
+ ✓ src/hooks/useTasks.test.tsx > useTasks · mutaciones optimistas > updateTask hace rollback si Supabase/RLS rechaza el cambio
+ ✓ src/hooks/useTasks.test.tsx > useTasks · mutaciones optimistas > deleteTask quita la tarea al instante y la restaura si la BD no borró nada
+ ✓ src/hooks/useTasks.test.tsx > useTasks · tiempo real > refleja INSERT, UPDATE y DELETE hechos por otro usuario sin recargar
+ ✓ src/hooks/useTasks.test.tsx > useTasks · tiempo real > ignora inserciones de OTROS proyectos (filtro project_id=eq)
+ ✓ src/hooks/useTasks.test.tsx > useTasks · tiempo real > descarta eventos fuera de orden (una versión vieja no pisa una nueva)
+ ✓ src/hooks/useTasks.test.tsx > useTasks · tiempo real > tras una reconexión re-sincroniza los cambios perdidos
+ ✓ src/hooks/useTasks.test.tsx > useTasks · ciclo de vida (sin fugas de memoria) > elimina el canal de Realtime al desmontar
+ ✓ src/hooks/useTasks.test.tsx > useTasks · ciclo de vida (sin fugas de memoria) > al cambiar de proyecto cierra el canal anterior y no mezcla datos
+ ✓ src/hooks/useTasks.test.tsx > useTasks · ciclo de vida (sin fugas de memoria) > una respuesta tardía de un proyecto anterior se descarta
+ ✓ src/hooks/useTasks.test.tsx > useTasks · ciclo de vida (sin fugas de memoria) > projectId = null desactiva fetching y Realtime
+ ✓ src/hooks/useTasks.test.tsx > useComments > envía comentarios con optimismo y recibe los de otros usuarios en tiempo real
+ Test Files  1 passed (1)
+      Tests  14 passed (14)

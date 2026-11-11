@@ -1,0 +1,8 @@
+OK 1 Ana crea tarea en su proyecto (created_by = auth.uid() por defecto)
+OK 2 Ana solo ve las tareas de su proyecto (1 de 2)
+OK 3 RLS bloquea crear tareas en un proyecto ajeno
+OK 4 no puede actualizar ni borrar tareas ajenas (0 filas)
+OK 5 trigger updated_at avanza en cada UPDATE
+OK 6 Ana comenta en su tarea
+OK 7 usuarios anónimos no acceden a tareas
+=== RLS: TODAS LAS PRUEBAS PASARON ===
